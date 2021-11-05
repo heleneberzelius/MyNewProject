@@ -13,14 +13,14 @@ public class introprog {
         TestText myText = new TestText();
 
 
-        while (scan.hasNext()){
+        while (!(myText.isStopped())){
 
             String text = scan.nextLine();
             myText.lines(text);
             if(myText.isStopped()) {
 
                 myText.addCharacters(text);
-                break;
+
             }else{
                 myText.addCharacters(text);
             }
